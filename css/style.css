@@ -8,16 +8,16 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
 header {
-    /* background-color: hsl(218, 28%, 13%); */
-    background-color: hsl(217, 28%, 15%)
+    background-color: hsl(217, 28%, 15%);
     padding-top: 15px;
     background-image: url(../resources/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
+    background-position-y: bottom;
 }
 header .header-info {
     display: flex;
@@ -25,7 +25,6 @@ header .header-info {
     justify-content: center;
     align-items: center;
     padding: 100px 0;
-
 }
 header .header-info h2{
     color: white;
@@ -39,7 +38,7 @@ header .header-info h2{
 
 header .header-info h5{
     color: white;
-    font-size: 12px;
+    font-size: 12px;    
     max-width: 720px;
     padding-top: 10px;
     padding-left: 2px;
@@ -54,8 +53,7 @@ nav {
 
 nav ul {
     display: flex;
-    border: 1px solid #ccc;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0px;
     width: 40%;
 
@@ -63,8 +61,7 @@ nav ul {
 
 nav ul li {
      list-style: none;
-     border: 1px solid #ccc;
-     padding-top: 10px;
+     padding-top: 5px;
      padding-left: 20px;
      padding-right: 20px;
 }
@@ -78,6 +75,7 @@ nav ul li a {
 .mainpointcontainer {
     display: flex;
     flex-direction: row;
+    background-color: hsl(218, 28%, 13%);
     max-width: 720px;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,15 +86,16 @@ nav ul li a {
     flex-direction: column;
     color: white;
     font-size: 14px;
-    height: 350px;
+    height: 360px;
     width: 340px;
-    margin 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     justify-content: center;
     text-align: center;
     border: 1px solid #ccc;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
 
 }
 
@@ -105,45 +104,28 @@ nav ul li a {
     background-repeat: no-repeat;
     background-position-x: 150px;
     background-position-y: 50px;
-    justify-content: center;
-    text-align: center;
-
    }
 .mainpoint-2 {
     background-image: url(../resources/icon-security.svg);
     background-repeat: no-repeat;
     background-position-x: 150px;
     background-position-y: 50px;
-    justify-content: center;
-    text-align: center;
-
     }
 .mainpoint-3 {
     background-image: url(../resources/icon-collaboration.svg);
     background-repeat: no-repeat;
     background-position-x: 150px;
     background-position-y: 50px;
-    justify-content: center;
-    text-align: center;
-
     }
 .mainpoint-4 {
     background-image: url(../resources/icon-any-file.svg);
     background-repeat: no-repeat;
     background-position-x: 150px;
     background-position-y: 50px;
-    justify-content: center;
-    text-align: center;
-
     }
 
    
 section {
-    display: flex;
-    justify-content: center;
-}
-
-section div div img {
     display: flex;
     justify-content: center;
 }
