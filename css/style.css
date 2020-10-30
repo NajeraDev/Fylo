@@ -87,12 +87,63 @@ nav ul li a {
     display: flex;
     flex-direction: column;
     color: white;
-    height: 340px;
+    font-size: 14px;
+    height: 350px;
     width: 340px;
     margin 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
     justify-content: center;
     text-align: center;
     border: 1px solid #ccc;
+    padding: 50px;
 
+}
+
+.mainpoint-1 {
+    background-image: url(../resources/icon-access-anywhere.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    justify-content: center;
+    text-align: center;
+
+   }
+.mainpoint-2 {
+    background-image: url(../resources/icon-security.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    justify-content: center;
+    text-align: center;
+
+    }
+.mainpoint-3 {
+    background-image: url(../resources/icon-collaboration.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    justify-content: center;
+    text-align: center;
+
+    }
+.mainpoint-4 {
+    background-image: url(../resources/icon-any-file.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    justify-content: center;
+    text-align: center;
+
+    }
+
+   
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section div div img {
+    display: flex;
+    justify-content: center;
 }
