@@ -92,7 +92,7 @@ nav ul li a {
     margin-left: 10px;
     justify-content: center;
     text-align: center;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 0px;
