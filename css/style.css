@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: hsl(218, 28%, 13%);
 }
 
@@ -61,6 +61,7 @@ nav ul {
 
 nav ul li {
      list-style: none;
+     font-family: Raleway;
      padding-top: 5px;
      padding-left: 20px;
      padding-right: 20px;
@@ -139,6 +140,10 @@ section {
     text-align: center;
     transition: 0.5s;
     color: white;            
+    font-family: Raleway;
     border-radius: 50px;
     display: block;
+  }
+
+  @media screen and (min-width:375px){
   }
