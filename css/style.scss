@@ -212,6 +212,11 @@ section {
 
 
 @media screen and (min-width:1440px){
+    nav .logo {
+        // background-image: "../resources/logo.svg";
+        max-inline-size: 200px;
+    }
+
     header {
         padding-top: 15px;
         background-image: url($backdesktop);

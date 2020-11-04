@@ -273,6 +273,9 @@ section {
 }
 
 @media screen and (min-width: 1440px) {
+  nav .logo {
+    max-inline-size: 200px;
+  }
   header {
     padding-top: 15px;
     background-image: url("../resources/bg-curvy-desktop.svg");
