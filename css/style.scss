@@ -19,6 +19,7 @@ $none:"";
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: hsl(218, 28%, 13%);
+    font-weight: 400;
 }
 
 
@@ -67,6 +68,7 @@ header {
     background-image: url($backdesktop);
     background-repeat: no-repeat;
     background-position-y: bottom;
+    background-size: 1520px;
 
 }
 
@@ -86,6 +88,8 @@ header {
     padding: 0px;
 }
 .container .header-info h2{
+    font-family: Raleway;
+    font-weight: 700;
     color: white;
     padding-top: 500px;
     padding-left: 50px;
@@ -94,6 +98,8 @@ header {
 }
 
 .container .header-info h5{
+    font-family: Raleway;
+    font-weight: 400;
     color: white;
     font-size: 12px;    
     max-width: 520px;
