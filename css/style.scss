@@ -1,0 +1,234 @@
+
+$backdesktop: "../resources/bg-curvy-desktop.svg";
+$backmobile: "../resources/bg-curvy-mobile.svg";
+
+$illustrationintro: "../resources/illustration-intro.png";
+$icon1: "../resources/icon-access-anywhere.svg";
+$icon2: "../resources/icon-security.svg";
+$icon3: "../resources/icon-collaboration.svg";
+$icon4: "../resources/icon-any-file.svg";
+
+$headerbackground: hsl(217, 28%, 15%);
+$mainpointbackground: hsl(218, 28%, 13%);
+$none:"";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+}
+
+
+@mixin flexcenter ($direction, $background) {
+    display: flex;
+    flex-direction: $direction;
+    background-color: $background;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: $headerbackground;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    width: 40%;
+
+}
+
+nav ul li {
+     list-style: none;
+     font-family: Raleway;
+     padding-top: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #8e8e8e;
+}
+
+header {
+    @include flexcenter(row,$headerbackground);
+    padding-top: 15px;
+    background-image: url($backdesktop);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 950px;
+}
+
+.container .header-info {
+    @include flexcenter(column,none);
+    background-image: url($illustrationintro);
+    background-repeat: no-repeat;
+    background-position-y:top;
+    width: 720px;
+    height: 950px;
+    padding: 0px;
+}
+.container .header-info h2{
+    color: white;
+    padding-top: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.container .header-info h5{
+    color: white;
+    font-size: 12px;    
+    max-width: 520px;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.container .header-info button{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-top: 20px;
+    margin: 20px auto;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.mainpointcontainer {
+    @include flexcenter(row,$none);
+    flex-wrap: wrap;
+    max-width: 720px;
+}
+
+.mainpoint {
+    @include flexcenter(column,$none);
+    color: white;
+    font-size: 14px;
+    height: 290px;
+    width: 270px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    h3 {
+        padding-top: 50px;
+    }
+    h6 {
+        padding-top: 20px;
+    }
+}
+
+.mainpoint-1 {
+    background-image: url($icon1);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+}
+.mainpoint-2 {
+    background-image: url($icon2);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+}
+.mainpoint-3 {
+    background-image: url($icon3);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+}
+.mainpoint-4 {
+    background-image: url($icon4);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 40px;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right,hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%)  100%)}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;            
+    font-family: Raleway;
+    border-radius: 50px;
+
+}
+
+@media screen and (min-width:375px){
+    nav .logo {
+        // background-image: "../resources/logo.svg";
+        max-inline-size: 60px;
+    }
+    header {
+        padding-top: 15px;
+        background-image: url($backmobile);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+    .container .header-info {
+        @include flexcenter(column,none);
+        background-image: url($illustrationintro);
+        color: white;
+        background-repeat: no-repeat;
+        background-position-y:top;
+        background-size: 375px;
+        max-width: 375px;
+        height: 350px;
+        padding: 0px;
+    }
+        
+    
+}
+
+
+@media screen and (min-width:1440px){
+    header {
+        padding-top: 15px;
+        background-image: url($backdesktop);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+    }
+
+    .container .header-info {
+        @include flexcenter(column,none);
+        background-image: url($illustrationintro);
+        background-repeat: no-repeat;
+        background-position-y:top;
+        background-size: 720px;
+        max-width: 720px;
+        height: 950px;
+        padding: 0px;
+    }
+    
+
+}

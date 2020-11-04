@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(218, 28%, 13%);
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: hsl(217, 28%, 15%);
+    padding-top: 15px;
+    background-image: url(../resources/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+header .header-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+header .header-info h2{
+    color: white;
+    /* font-size: 12px; */
+    max-width: 720px;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+}
+
+header .header-info h5{
+    color: white;
+    font-size: 12px;    
+    max-width: 720px;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    width: 40%;
+
+}
+
+nav ul li {
+     list-style: none;
+     font-family: Raleway;
+     padding-top: 5px;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-align: center;
+    color: #8e8e8e;
+}
+
+.mainpointcontainer {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(218, 28%, 13%);
+    max-width: 720px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.mainpoint {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    height: 360px;
+    width: 340px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 0px;
+
+}
+
+.mainpoint-1 {
+    background-image: url(../resources/icon-access-anywhere.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+   }
+.mainpoint-2 {
+    background-image: url(../resources/icon-security.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    }
+.mainpoint-3 {
+    background-image: url(../resources/icon-collaboration.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    }
+.mainpoint-4 {
+    background-image: url(../resources/icon-any-file.svg);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 50px;
+    }
+
+   
+section {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right,hsl(176, 68%, 64%) 0%, hsl(198, 60%, 50%)  100%)}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;            
+    font-family: Raleway;
+    border-radius: 50px;
+    display: block;
+  }
+
+  @media screen and (min-width:375px){
+  }
